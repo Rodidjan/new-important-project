@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.autoScreen {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(10, 10, 25, 0.95);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.autoBox {
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #20203a;
+    border: 1px solid #55557a;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(100, 80, 255, 0.25);
+}
+
+.autoBox input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.autoBox button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #7957ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.autoBox button:hover {
+    background: #6240e8;
+}
+
+#authMessage {
+    color: #ff8c8c;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #3a1c71, #120b24 60%);
+
+    color: yellowgreen;
+}
+
+/* Верхняя панель */
+
+.header {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffd700;
+}
+
+.balance {
+    background: rgba(255,255,255,0.1);
+
+    padding: 12px 20px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+/* Основная часть */
+
+.container {
+    width: 90%;
+    max-width: 700px;
+
+    margin: 50px auto;
+    text-align: center;
+}
+
+.demo-label {
+    display: inline-block;
+
+    padding: 7px 15px;
+
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+
+    background: #ffcc00;
+    color: #181818;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #aaa;
+
+    margin-bottom: 30px;
+}
+
+/* Игровой автомат */
+
+.slot-machine {
+    width: 100%;
+    padding: 35px;
+
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    text-align: center;
+}
+
+.reels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.reel {
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 65px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        inset 0 -8px 0 #ccc,
+        0 10px 25px rgba(0,0,0,0.4);
+
+    color: black;
+}
+
+/* Ставка */
+
+.bet {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    color: #ccc;
+}
+
+.bet input {
+    width: 100px;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    text-align: center;
+
+    font-size: 16px;
+}
+
+/* Кнопка */
+
+button {
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #ffcc00,
+        #ff8800
+    );
+
+    color: #1a1a1a;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(255,180,0,0.3);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Сообщение */
+
+.message {
+    margin-top: 20px;
+
+    min-height: 25px;
+
+    font-size: 18px;
+}
+
+/* Правила */
+
+.rules {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background: rgba(0,0,0,0.3);
+
+    border-radius: 20px;
+}
+
+.rules h2 {
+    margin-bottom: 15px;
+}
+
+.rule {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 10px 20px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.rule span {
+    color: #ffd700;
+}
+
+/* Подвал */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+/* Телефон */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .reel {
+        width: 90px;
+        height: 90px;
+
+        font-size: 45px;
+    }
+
+    .slot-machine {
+        padding: 20px;
+    }
+}

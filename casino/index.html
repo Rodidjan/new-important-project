@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = 'ru'>
+    <head> <!-- то, что не видит пользователь-->
+        <meta charset = 'UTF-8'>
+        <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+        <title> Казино Бурмалды</title><!-- название сайта-->
+        <link rel = 'stylesheet' href = 'ass.css'>
+    </head>
+
+    <body> <!-- это пользователь уже видит-->
+        <div id="autoScreen", class="autoScreen">
+        <div class="autoBox">
+            <h2> ГАМАРДЖОБА ГЕНАЦВАЛИ</h2>
+            <p>расскажи о себе брат</p>
+
+            <input
+            type="text"
+            id="userName"
+            placeholder="имя родного"
+            maxlength="10"
+            >
+            <button id="loginB" type="button">НАЧАТЬ ЛУДОПРИКЛЮЧЕНИЕ</button>
+
+            <p id="authMessege"></p>
+
+        </div>
+    </div>
+
+        <header class = 'header'> <!-- самый вверх страницы -->
+            <div class = 'logo'> <!-- типо объект, class для css, span для перекраски-->
+                ПРОЕБИ<span> ВСЁ</span>
+            </div>
+            <div id = 'balance'> <!-- id для js --> <!-- по идеи можно сразу id и class в одну строчку-->
+                <span class = 'balance'>10000</span>
+            </div>
+
+
+        </header>
+
+
+        <main class="container"> <!-- сама страница, по идеи середина -->
+
+            
+            <h1> <!-- заголовок -->
+
+                <div class = "color"> <!-- интересно, сработает ли-->
+                    <span> СЛИИИИИИИИИИИВЫ</span>
+                </div>
+
+            </h1>
+
+            <p class = 'subtitle'> <!-- p это абзац-->
+                УИИИИИИИИИИИ
+            </p>
+
+            <div class = 'clot-machine'><!-- это слот-->
+                <div class = 'reels'><!-- это все барабаны в одном div-->
+                    <div id = 'reel1' class = 'reel'>🍒</div> <!-- все барабаны слева направо-->
+
+
+                    <div id = 'reel2' class = 'reel'>🍋</div>
+
+                    <div id = 'reel3' class = 'reel'>💎</div>
+                </div>
+            </div>
+
+            <label for ='bet'>Ставка:</label><!-- подпись у поля-->
+
+            <input
+            type='number'
+            id='bet'
+            value='10'
+            min="10"><!-- ввод, как в питоне. Тип только цифры, value = начальное значение, а также мин и макс значения -->
+
+            <button id="spinButton">
+                ДАВАЙ РОДНОЙ ЕБАШЬ
+            </button>
+
+            <button id="min">
+                МИНИМАЛЬНАЯ СТАВКА
+            </button>
+
+            <button id="all">
+                ALL IN
+            </button>
+
+            <div id="message" class="message"><!-- собщение типо победа или луз-->
+                УДАЧИ!!!
+            </div>
+            
+        </main>
+        <script src="app.js"></script>
+
+    </body>
+</html>
